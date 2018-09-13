@@ -61,7 +61,7 @@ case "$1" in
 
 			#printf "Setting up:\nprocesses=$processes\nsessions=$sessions\ntransactions=$transactions\n"
 
-			mv /u01/app/oracle-product/11.2.0/EE/dbs /u01/app/oracle/dbs
+			cp -a /u01/app/oracle-product/11.2.0/EE/dbs /u01/app/oracle/dbs
 			ln -s /u01/app/oracle/dbs /u01/app/oracle-product/11.2.0/EE/dbs
 
 			echo "Starting tnslsnr"
