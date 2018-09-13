@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -xe
 
 # Prevent owner issues on mounted folders
 echo "Preparing oracle installer."
