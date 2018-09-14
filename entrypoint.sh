@@ -1,5 +1,8 @@
 #!/bin/bash
-set -xe
+
+set -e
+# add debug mode
+[ "$DEBUG" ] && set -x
 
 # Prevent owner issues on mounted folders
 echo "Preparing oracle installer."
